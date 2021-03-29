@@ -1,0 +1,30 @@
+<div class="container">
+  <h3>VOTE NOW</h3>
+  <form [formGroup]="voteForm" (ngSubmit)="onSubmit()"> <!-- (ngSubmit)="onSubmit()"-->
+    <div class="form-group"> 
+      <input formControlName="cin" class="form-control" type="text" placeholder="CIN">
+    </div>
+
+    <div class="form-group"> 
+      <input  formControlName="nom" class="form-control" type="text" placeholder="NOM">
+    </div>
+
+    <div class="form-group"> 
+      <input  formControlName="prenom" class="form-control" type="text" placeholder="PRENOM">
+    </div>
+
+    <div class="form-group"> 
+      <select formControlName="partie"  name="parties" >
+        <option *ngFor="let partie of parties">{{partie.nom}}</option>
+      </select>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-info">VOTE</button>
+
+  </form>
+
+</div>
+
+

@@ -1,0 +1,17 @@
+<div class="container">
+<h3>Election Results</h3>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">party name</th>
+      <th scope="col">The number of votes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let partie of service.praties">
+      <td>{{partie.nom}}</td>
+      <td>{{partie._nbrVotes}}</td>
+    </tr> 
+  </tbody>
+</table>

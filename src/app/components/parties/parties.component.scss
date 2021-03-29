@@ -1,0 +1,26 @@
+main {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+app-add-partie{
+  text-align: center;
+  width: 30%;
+  min-width: 300px;
+}
+
+app-list-partie{
+  text-align: center;
+  width: 70%;
+  min-width: 700px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px 50px 0px;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+}

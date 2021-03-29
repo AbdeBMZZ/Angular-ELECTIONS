@@ -1,0 +1,16 @@
+<div class="partie-item d-flex justify-content-between align-items-center">
+    <div>
+      <h6>{{partie.nom}}</h6>
+      <p>
+        {{partie.description}}
+      </p>
+      <p>
+        {{partie.dateCreation}}
+      </p>
+    </div>
+    <div>
+      <button (click)="onClick(partie)" class="btn btn-danger" >
+        Supprimer
+      </button>
+    </div>
+  </div>
